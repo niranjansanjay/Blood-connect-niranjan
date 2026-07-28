@@ -1,33 +1,35 @@
-# 🩸 BloodConnect
+# 🩸 Blood Connect
+### Real-Time Blood Donation & Emergency Response Platform
 
-A centralized blood donor management platform developed for **Providence College of Engineering** to simplify blood donation requests and connect donors with recipients quickly during emergencies.
+Blood Connect is a web-based blood donor management platform developed for **Providence College of Engineering, Chengannur** to simplify and digitize blood donation coordination within the college. The platform replaces the traditional manual process used by the National Service Scheme (NSS), enabling faster donor identification and improved emergency response.
 
-![Status](https://img.shields.io/badge/Status-Completed-success)
-![Platform](https://img.shields.io/badge/Platform-Web-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+🔗 **Live Demo:** https://blood-connect-theta.vercel.app/
 
 ---
 
-## 📌 Overview
+## 📖 About the Project
 
-BloodConnect is a web application that replaces the traditional manual process of finding blood donors through phone calls and WhatsApp groups. The platform maintains a centralized donor database, allowing users to search for eligible donors, submit blood requests, and manage donations efficiently.
+During medical emergencies, finding a suitable blood donor quickly can save lives. In many colleges, blood donation requests are handled manually through WhatsApp groups, phone calls, and personal contacts. This approach is slow, difficult to manage, and often results in delayed responses.
 
-The system helps reduce response time during emergencies while making blood donation management easier for students and administrators.
+**Blood Connect** was developed to solve this problem by creating a centralized digital platform where students can voluntarily register as blood donors and NSS volunteers can instantly search for eligible donors based on blood group and availability.
+
+The platform improves donor management, minimizes manual work, and enables a faster response during emergencies.
 
 ---
 
 ## ✨ Features
 
-- 🩸 Centralized blood donor database
-- 🔍 Search donors by blood group
-- 🙋 Register as a blood donor
-- 📢 Create emergency blood requests
-- ❤️ "I Can Donate" feature
-- 👤 Donor profile management
-- ⏳ Automatic donation cooldown tracking (120 days)
-- 📋 Blood request management
-- 🛡️ Admin dashboard
-- 📱 Responsive user interface
+- 👤 Student Registration & Login
+- 🩸 Blood Group Registration
+- ❤️ "Raise Hand" Feature to indicate donation willingness
+- 🔍 Search Donors by Blood Group
+- 📢 Emergency Blood Request Posting
+- 💬 Contact Eligible Donors
+- 🛡️ Admin Dashboard
+- 📋 Donor Profile Management
+- ✅ Donation Status Tracking
+- ⏳ 120-Day Donation Cooldown Management
+- 📱 Responsive User Interface
 
 ---
 
@@ -40,7 +42,7 @@ The system helps reduce response time during emergencies while making blood dona
 
 ### Backend
 - Firebase Authentication
-- Firebase Firestore
+- Cloud Firestore
 - Firebase Storage
 
 ### Deployment
@@ -48,118 +50,127 @@ The system helps reduce response time during emergencies while making blood dona
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Workflow
 
-```
-BloodConnect/
-│
-├── app/
-├── components/
-├── public/
-├── firebase/
-├── hooks/
-├── utils/
-├── styles/
-└── README.md
-```
+1. Student registers and creates an account.
+2. Student enters blood group and personal details.
+3. Student can enable the **Raise Hand** option when willing to donate.
+4. NSS volunteers search donors based on blood group.
+5. Blood requests are posted during emergencies.
+6. Eligible donors are notified.
+7. After successful donation, the donor enters a 120-day cooldown period before becoming eligible again.
 
 ---
 
-## 🚀 Getting Started
+## 🎯 Objectives
 
-### Clone the repository
-
-```bash
-git clone https://github.com/niranjansanjay/BloodConnect.git
-```
-
-### Navigate to the project
-
-```bash
-cd BloodConnect
-```
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-Open your browser and visit:
-
-```
-http://localhost:3000
-```
+- Digitize blood donor management within the college.
+- Reduce manual effort for NSS volunteers.
+- Improve emergency response time.
+- Maintain an organized donor database.
+- Encourage voluntary blood donation among students.
 
 ---
 
 ## 📸 Screenshots
 
-Add screenshots of:
+> Add screenshots of the following pages here:
 
 - Home Page
-- Donor Registration
+- Login
+- Registration
+- Dashboard
 - Blood Request Page
-- Search Donors
-- Admin Dashboard
-- User Profile
+- Donor Search
+- Admin Panel
+- Profile Page
 
 ---
 
-## 🎯 Problem Statement
+## 📊 Project Architecture
 
-Finding blood donors during emergencies often relies on manual communication through phone calls and messaging groups, leading to delays and inefficiencies.
-
-BloodConnect provides a centralized digital platform that connects donors and recipients instantly, improving accessibility and reducing emergency response time.
-
----
-
-## 💡 Future Improvements
-
-- SMS notifications
-- Email alerts
-- Hospital integration
-- GPS-based nearby donor search
-- Mobile application
-- Donation history analytics
-
----
-
-## 👨‍💻 Developed By
-
-**Niranjan Sanjay**
-
-Computer Science Engineering  
-Providence College of Engineering
+```
+Users
+   │
+   ▼
+React / Next.js Frontend
+   │
+Firebase Authentication
+   │
+Cloud Firestore Database
+   │
+Admin Dashboard
+   │
+NSS Volunteer
+```
 
 ---
 
-## 📜 License
+## 🚀 Future Enhancements
 
-This project is licensed under the MIT License.
+- SMS & Email Notifications
+- Push Notifications
+- Multi-College Support
+- Hospital Integration
+- GPS-Based Nearby Donor Search
+- Blood Donation Certificate Generation
+- Mobile Application (Android & iOS)
+- AI-Based Emergency Donor Recommendation
+
+---
+
+## 👨‍💻 Team Members
+
+- **Niranjan Sanjay** – PRC23CS073
+- **Javad Abdul Qadir** – PRC23CS053
+- **M S Varun Nandan** – PRC23CS068
+- **Josbin Joseph** – PRC23CS061
+
+---
+
+## 👨‍🏫 Project Guide
+
+**Prof. Nidhin R**  
+Assistant Professor  
+Department of Computer Science & Engineering
+
+### Project Co-Supervisor
+
+**Ms. Deepa Thomas**  
+Assistant Professor  
+Department of Computer Science & Engineering
+
+---
+
+## 🏫 Institution
+
+**Providence College of Engineering**  
+Chengannur, Kerala, India
+
+Department of Computer Science & Engineering
+
+March 2026
+
+---
+
+## ❤️ Acknowledgement
+
+We sincerely thank our project guide, co-supervisor, Head of the Department, faculty members, and Providence College of Engineering for their valuable guidance and continuous support throughout the development of this project.
+
+We also express our gratitude to the National Service Scheme (NSS) volunteers and students whose feedback helped shape the platform into a practical solution for blood donation management.
+
+---
+
+## 📄 License
+
+This project was developed as a final-year academic project for the Department of Computer Science & Engineering, Providence College of Engineering.
+
+For educational purposes only.
 
 ---
 
 ## ⭐ Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub!
-
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you found this project helpful, consider giving it a ⭐ on GitHub!ors of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
