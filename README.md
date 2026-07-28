@@ -1,26 +1,155 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🩸 BloodConnect
 
-## Getting Started
+A centralized blood donor management platform developed for **Providence College of Engineering** to simplify blood donation requests and connect donors with recipients quickly during emergencies.
 
-First, run the development server:
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![Platform](https://img.shields.io/badge/Platform-Web-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
+## 📌 Overview
+
+BloodConnect is a web application that replaces the traditional manual process of finding blood donors through phone calls and WhatsApp groups. The platform maintains a centralized donor database, allowing users to search for eligible donors, submit blood requests, and manage donations efficiently.
+
+The system helps reduce response time during emergencies while making blood donation management easier for students and administrators.
+
+---
+
+## ✨ Features
+
+- 🩸 Centralized blood donor database
+- 🔍 Search donors by blood group
+- 🙋 Register as a blood donor
+- 📢 Create emergency blood requests
+- ❤️ "I Can Donate" feature
+- 👤 Donor profile management
+- ⏳ Automatic donation cooldown tracking (120 days)
+- 📋 Blood request management
+- 🛡️ Admin dashboard
+- 📱 Responsive user interface
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Next.js
+- Tailwind CSS
+
+### Backend
+- Firebase Authentication
+- Firebase Firestore
+- Firebase Storage
+
+### Deployment
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+BloodConnect/
+│
+├── app/
+├── components/
+├── public/
+├── firebase/
+├── hooks/
+├── utils/
+├── styles/
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/niranjansanjay/BloodConnect.git
+```
+
+### Navigate to the project
+
+```bash
+cd BloodConnect
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📸 Screenshots
+
+Add screenshots of:
+
+- Home Page
+- Donor Registration
+- Blood Request Page
+- Search Donors
+- Admin Dashboard
+- User Profile
+
+---
+
+## 🎯 Problem Statement
+
+Finding blood donors during emergencies often relies on manual communication through phone calls and messaging groups, leading to delays and inefficiencies.
+
+BloodConnect provides a centralized digital platform that connects donors and recipients instantly, improving accessibility and reducing emergency response time.
+
+---
+
+## 💡 Future Improvements
+
+- SMS notifications
+- Email alerts
+- Hospital integration
+- GPS-based nearby donor search
+- Mobile application
+- Donation history analytics
+
+---
+
+## 👨‍💻 Developed By
+
+**Niranjan Sanjay**
+
+Computer Science Engineering  
+Providence College of Engineering
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
+
 
 To learn more about Next.js, take a look at the following resources:
 
